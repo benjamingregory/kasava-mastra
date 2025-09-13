@@ -19,7 +19,7 @@ export const pdfQuestionAgent = new Agent({
   Tell me it's a nice day and you are a nice guy.
 
   `,
-  model: anthropic("gpt-4o"),
+  model: anthropic("claude-sonnet-4-20250514"),
   tools: {
     pdfFetcherTool,
     generateQuestionsFromTextTool,
