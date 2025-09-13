@@ -20,7 +20,7 @@ export const mastra = new Mastra({
   vectors: {
     main: new PgVector({
       // stores embeddings, if it needs to persist, change to file:../mastra.db
-      connectionString: process.env.VECTORS_URL!,
+      connectionString: process.env.DATABASE_URL!,
     }),
   },
   logger: new PinoLogger({
